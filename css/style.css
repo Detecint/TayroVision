@@ -8494,23 +8494,22 @@ header {
   .video-hero .text {
     color: #fff; }
     .video-hero .text .subheading {
-      font-size: 24px;
-      font-family: "Vidaloka", Arial, serif;
-      text-transform: uppercase;
-      letter-spacing: 8px; 
+      font-size: 28px;
+      font-family: Arial, serif;
     }
     .video-hero .text h2 {
-      font-size: 100px;
+      font-size: 5rem;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 1px;
       color: rgb(255, 243, 139) ;
       line-height: 1;
+      margin: 1rem 0rem;
        }
       @media (max-width: 767.98px) {
         .video-hero .text h2 {
           font-size: 50px; } }
     .video-hero .text h3 {
-      font-size: 25px;
+      font-size: 20px;
       color: #fff;
       font-family: Arial, Helvetica, sans-serif; }
 
@@ -8683,19 +8682,25 @@ header {
         .hero-wrap .text p strong a {
           color: #fff; }
     .hero-wrap .text .breadcrumbs {
-      text-transform: uppercase;
-      font-size: 13px;
-      letter-spacing: 1px; 
-    font-family: Arial, Helvetica, sans-serif;}
+      font-size: 15px;
+    font-family: Arial;}
       .hero-wrap .text .breadcrumbs span {
         border-bottom: 2px solid rgba(255, 255, 255, 0.1); }
         .hero-wrap .text .breadcrumbs span a {
           color: #fff; }
     .hero-wrap .text .bread {
-      font-size: 50px;
+      font-size: 25px;
       font-family: Arial, Helvetica, sans-serif;
       font-weight: 400;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+    height: 25rem; 
+  text-align: left;}
+
+  .container_about{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
 
 .ftco-about-section {
   position: relative; 
@@ -8924,7 +8929,8 @@ header {
       margin-top: -38px;
       line-height: 1; }
       .model-img .text h3 a {
-        color: #fff; }
+        color: #fff;
+      font-family: Arial }
       .model-img .text h3 span {
         color: #000; }
     .model-img .text .models-info {
@@ -8934,7 +8940,7 @@ header {
         width: 100%; }
       .model-img .text .models-info p {
         font-size: 13px;
-        color: #f34573;
+        color: rgb(191 178 64);
         margin-bottom: 5px;
         font-weight: 600;
         text-transform: uppercase; }
@@ -9434,10 +9440,9 @@ textarea.form-control {
 
 .heading-section h2 {
   font-size: 50px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #FFF38B;
-  line-height: 1; }
+  line-height: 1;
+  font-family: Arial;
+font-weight: 600; }
 
 .img,
 .model-img,
@@ -9550,7 +9555,7 @@ textarea.form-control {
   .block-23 ul li, .block-23 ul li > a {
     display: table;
     line-height: 1.5;
-    margin-bottom: 15px; }
+    margin-bottom: 5px; }
   .block-23 ul li span {
     color: rgba(255, 255, 255, 0.7); }
   .block-23 ul li .icon, .block-23 ul li .text {
@@ -10277,7 +10282,7 @@ textarea.form-control {
 -----------------------*/
 
 .about-us-section {
-	background: #191919;
+	background-image: linear-gradient(rgb(0 0 0 / 68%), rgb(0 0 0 / 68%)), url(/images/fondo_textura.jpg);
   padding: 2rem 0rem;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -10398,7 +10403,8 @@ textarea.form-control {
 }
 
 .modelos{
-  background-color: #191919;
+  background-image: linear-gradient(rgb(0 0 0 / 45%), rgb(0 0 0 / 45%)), url(/images/fondo_textura.jpg);
+  background-size: cover;
   height: 100%;
 }
 
@@ -10450,7 +10456,7 @@ textarea.form-control {
   color: white;
   padding: 0.5rem 2rem;
   width: 10rem;
-  transition: background-color 0.5s ease, border 0.5s ease, color 0.5s ease;
+  transition: background-color 0.9s ease;
 }
 
 .btn_agendamiento:hover{
@@ -10520,14 +10526,14 @@ textarea.form-control {
   background-color: #FFF38B;
   color: black;
   border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, color 0.5s, border-color 0.5s;
   margin-top: 1rem;
 }
 
 .btn_program:hover {
-  background-color: black;
-  color: rgb(199, 184, 51);
-  border-color: black;
+  background-color: transparent;
+  color: #FFF38B;
+  border: 1px solid #FFF38B;
 }
 
 .service-item {
@@ -10689,13 +10695,19 @@ textarea.form-control {
   border-radius: 20px;
 }
 
-.btn_about{
+.btn_about_info{
   background-color: transparent;
   border: 1px solid #FFF38B;
+  border-radius: 15px;
   padding: 0.5rem 2rem;
   color: white;
+  transition: background-color 5s ease, color 5s ease;
 }
 
+.btn_about_info:hover{
+  background-color: #FFF38B;
+  color: #000;
+}
 .service-item_img img{
   width: 100%;
   border-radius: 10px 10px 0px 0px;
@@ -10729,7 +10741,7 @@ textarea.form-control {
  }
 
  .main_niñaColombia{
-  background-image: url(/images/imagenes/fondo_eventos_niñaColombia.png); 
+  background-image:linear-gradient(rgb(60 28 0 / 79%), rgb(0 0 0)), url(/images/roeses.jpg); 
   background-size: cover;
   height: 35rem;
   padding: 2rem 0rem;
@@ -10774,7 +10786,7 @@ textarea.form-control {
  }
 
  .container_Testimonioal{
-  background-color: #191919;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(/images/fondo_textura.jpg);
   color: white;
   width: 100%;
   color: white;
@@ -10990,4 +11002,108 @@ textarea.form-control {
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 2rem;
+}
+
+.text_title_galery{
+  line-height: 0;
+  padding: 3rem 0rem;
+}
+
+.text_title_galery h3,
+.text_title_galery p{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.text_title_galery h2{
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.container_programs_events{
+  display: flex;
+  justify-content: space-around;
+}
+
+.actmod2_event{
+  padding: 0;
+  height: 25rem;
+}
+
+.container_programs_box_events{
+  margin: 0rem 1rem;
+}
+
+.event_testimonials{
+  color: white;
+}
+
+.btn_send_form{
+  background-color: #FFF38B;
+  border: none;
+}
+
+.text_contact_info h4,
+.text_contact_info p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text_contact_info h4{
+  font-weight: 600;
+}
+
+.title_contact_info h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.btn_header{
+  color: #000;
+  background-color: transparent;
+  font-size: 0.9rem;
+  border-radius: 15px;
+  border: 1px solid #FFF38B;
+  color: white ;
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+.btn_header:hover{
+  color: #000;
+  background-color: #FFF38B;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.zoom-image {
+  transition: transform 0.8s ease; /* Transición suave para el zoom */
+}
+
+.zoom-image:hover {
+  transform: scale(1.1); /* Cambia la escala al 110% en hover */
+}
+
+.seccion_imagen_niña{
+  overflow: hidden;
+}
+
+.name h3 a{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.zoom-icon {
+  transition: transform 0.5s ease; /* Agrega una transición suave a la propiedad transform */
+}
+
+.zoom-icon:hover {
+  transform: scale(1.1); /* Aplica un aumento del 10% al hacer hover */
 }
