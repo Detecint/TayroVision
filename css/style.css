@@ -8501,7 +8501,7 @@ header {
       font-size: 5rem;
       font-weight: 600;
       text-transform: uppercase;
-      color: rgb(255, 243, 139) ;
+      color:rgb(255 241 120);
       line-height: 1;
       margin: 1rem 0rem;
        }
@@ -10764,6 +10764,10 @@ font-weight: 600; }
   text-align: center;
  }
 
+ .seccion_imagen_niña_texto p{
+  font-size: 1rem;
+ }
+
  .contadores_niña_colombia p{
   text-align: center;
  }
@@ -10773,6 +10777,12 @@ font-weight: 600; }
   background-color: transparent;
   border: 1px solid #FFF38B;
   color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+ }
+
+ .btn_niñaColombia:hover{
+  padding: 0.5rem 2rem;  background-color: #FFF38B;
+  color: var(--gray-dark);
  }
 
  .contenedor_niña{
@@ -11061,12 +11071,14 @@ font-weight: 600; }
 
 .btn_header{
   color: #000;
-  background-color: transparent;
+  background-color: black;
   font-size: 0.9rem;
   border-radius: 15px;
   border: 1px solid #FFF38B;
   color: white ;
   transition: background-color 0.8s ease, color 0.8s ease;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
 }
 
 .btn_header:hover{
@@ -11106,4 +11118,106 @@ font-weight: 600; }
 
 .zoom-icon:hover {
   transform: scale(1.1); /* Aplica un aumento del 10% al hacer hover */
+}
+
+.bd-title h2{
+  font-family: Arial; 
+  font-weight: 600; 
+  font-size: 2.5rem; 
+  color: #FFF38B;
+}
+
+.bd-title h3{
+  font-family: Arial; 
+  font-weight: 600; 
+  font-size: 1.5rem; 
+  color: #FFF38B;
+}
+
+.bm-item h3{
+  font-size: 1.5rem;
+  font-family: Arial;
+  font-weight: 600;
+  color: #FFF38B;
+}
+
+.service-item_img {
+  position: relative;
+  overflow: hidden;
+}
+
+.zoom-image {
+  transition: transform 0.7s ease; /* Agregamos una transición suave para el zoom */
+}
+
+.service-item_img:hover .zoom-image {
+  transform: scale(1.1); /* Escala la imagen al 110% cuando se pasa el mouse */
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .container_programs{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-section{
+    padding: 0rem;
+  }
+
+  .main_niñaColombia{
+    height: 100%;
+  }
+
+  .contenedor_niña{
+    padding: 0rem 1rem;
+  }
+
+  .services_main{
+    padding: 2rem 0rem;
+  }
+
+  .text_Services_program{
+    padding: 2rem;
+  }
+
+  .container_program_Act{
+    padding: 0;
+  }
+
+  .btn_niñaColombia{
+    margin-top: 2rem;
+  }
 }
